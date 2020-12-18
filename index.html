@@ -2,220 +2,104 @@
 <html lang="fr-FR">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/10b5080c3a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://use.fontawesome.com/9a7574b070.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BULTEL ALexis</title>
+    <title>BULTEL Alexis</title>
 </head>
 
 <body>
-    <!-- PARALLAX HEADER -->
-    <div class="pimg1">
+    <section id="section_header">
         <!-- NAVBAR -->
         <div class="responsive_nav">
-            <div class="logo">
-                <img src="img/superpowers.svg" alt="">
-            </div>
             <div class="menu">
                 <h4>Menu</h4>
             </div>
         </div>
-        <nav>
-            <div class="logo">
-                <img src="img/superpowers.svg" alt="">
-            </div>
+        <nav> 
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#section1">A propos</a></li>
-                <li><a href="#section2">Formations</a></li>
-                <li><a href="#section3">Portfolio</a></li>
-                <li><a href="#section4">Contact</a></li>
+                <li><a href="#section_1">A propos</a></li>
+                <li><a href="#section_2">Formations</a></li>
+                <li><a href="#section_3">Portfolio</a></li>
+                <li><a href="#section_4">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="ptext">
-            <div class="border">
-                <p> BULTEL ALEXIS</p>
-                <p> Développeur Web Junior </p>
-            </div>
+        <div class="title">
+            <h2>BULTEL Alexis</h2>
+            <h1>Développeur web junior</h1>
         </div>
-    </div>
 
-    <section id="section1">
-        <h2>Reconversion</h2>
-        <!-- <div class="circle">
-            
-                <i class="far fa-address-card"></i>
-            
-            
-                <i class="fas fa-chart-line"></i>
-            
-            
-                <i class="fas fa-rocket"></i>
-            
-            
-        </div> -->
-        <div class="arguments">
-
-            <div class="argument1">
-                <i class="far fa-address-card"></i>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Après avoir travaillé pendant plus de huit ans en tant que maitre chien dans l'armée, 
-                j'ai ressenti le besoin d'allier mon attirance envers les nouvelles technologies 
-                avec mon désir de créer.</p>
-            </div>
-
-            <div class="argument1">
-                <i class="fas fa-chart-line"></i>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>J'ai donc effectué un bilan de compétences qui m'a conforté dans mon idée de me diriger 
-                vers les métiers du numérique et plus spécifiquement le développement web.</p>
-            </div>
-
-            <div class="argument1">
-                <i class="fas fa-rocket"></i>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Je me suis donc lancé dans des formations en autodidacte dans les différents langages
-                    du web grace a des formations proposé par UDEMY, OpenClassRoom.
-                </p>
-            </div>
-        </div>
     </section>
-    <!-- PARALLAX IMG 1 -->
-    <div class="pimg2">
-    </div>
 
-    <section id="section2">
-        <h2>Formations</h2>
-        <div class="bloc_formations">
-            <div class="img_formations">
-                <img src="img/D_30-01.svg" alt="">
-            </div>
-            <div class="text_formations">
-                <p>Aprés l'obtention de mon BAC PRO en production horticole, je me suis engagé dans l'armée de l'air.
-                    Cette expérience m'a appris la rigueur, le travail en équipe ainsi que la gestion de celle-ci.
-                    Par la suite, j'ai ressenti le desir de me reconvertir, je me suis donc auto-formé pour pouvoir
-                    en faire mon futur metier. 
-                </p>
-            </div>
-        </div>
-        <h2>Compétences</h2>
-        <div class="bloc_formations">
-            <div class="text_formations">
-                <h3>Savoir-être :</h3>
-                <p>Rigueur, organisation, management, polyvalence, autonomie et travail en équipe.</p>
-                <h3>Savoir-faire :</h3>
-                <ul>
-                    <li><span style="font-weight: bold;">HTML CSS :</span> Flexbox, responsive design, bootstrap.</li>
-                    <li><span style="font-weight: bold;">JavaScript :</span> BOM, DOM, POO, AJAX, API.</li>
-                    <li><span style="font-weight: bold;">Node JS :</span> En cours de formation.</li>
-                </ul>
-            </div>
-            <div class="img_competences">
-                <img src="img/langage-html-langage-css-langage-javascript.png" alt="">
-            </div>
+<!-- FORMATION -->
+    <section id="section_1">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Après avoir travaillé pendant plus de huit ans en tant que maitre chien dans l'armée, j'ai ressenti le besoin d'allier mon attirance envers les nouvelles technologies avec mon désir de créer.</p>
+                    </div>
+                    <div class="time">
+                        <h4>January 2020</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>J'ai donc effectué un bilan de compétences qui m'a conforté dans mon idée de me diriger vers les métiers du numérique et plus spécifiquement le développement web.</p>
+                    </div>
+                    <div class="time">
+                        <h4>January 2020</h4>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Je me suis donc lancé dans des formations en autodidacte dans les différents langages du web grace a des formations proposé par UDEMY, OpenClassRooms.</p>
+                    </div>
+                    <div class="time">
+                        <h4>January 2020</h4>
+                    </div>
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
         </div>
     </section>
 
-    <div class="pimg3">
-    </div>
-
-    <section id="section3">
-        <h2>Portfolio</h2>
-        <div class="container">
-            <div class="card">
-                <div class="imgbx">
-                    <img src="img/m_46.svg" alt="">
-                </div>
-                <div class="contentbx">
-                    <div class="content">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis sunt itaque iste
-                            aut dolore cupiditate! Eum suscipit, porro est quo quod nisi veniam consectetur minima.
-                            Reiciendis rerum ipsum deserunt!</p>
-                            <a href="#">Voir Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgbx">
-                    <img src="img/m_46.svg" alt="">
-                </div>
-                <div class="contentbx">
-                    <div class="content">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis sunt itaque iste
-                            aut dolore cupiditate! Eum suscipit, porro est quo quod nisi veniam consectetur minima.
-                            Reiciendis rerum ipsum deserunt!</p>
-                            <a href="#">Voir Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgbx">
-                    <img src="img/m_46.svg" alt="">
-                </div>
-                <div class="contentbx">
-                    <div class="content">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis sunt itaque iste
-                            aut dolore cupiditate! Eum suscipit, porro est quo quod nisi veniam consectetur minima.
-                            Reiciendis rerum ipsum deserunt!</p>
-                            <a href="#">Voir Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgbx">
-                    <img src="img/m_46.svg" alt="">
-                </div>
-                <div class="contentbx">
-                    <div class="content">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis sunt itaque iste
-                            aut dolore cupiditate! Eum suscipit, porro est quo quod nisi veniam consectetur minima.
-                            Reiciendis rerum ipsum deserunt!</p>
-                            <a href="#">Voir Plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgbx">
-                    <img src="img/m_46.svg" alt="">
-                </div>
-                <div class="contentbx">
-                    <div class="content">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto perferendis sunt itaque iste
-                            aut dolore cupiditate! Eum suscipit, porro est quo quod nisi veniam consectetur minima.
-                            Reiciendis rerum ipsum deserunt!</p>
-                            <a href="#">Voir Plus</a>
-                    </div>
-                </div>
-            </div>
+    <!-- PORTFOLIO -->
+    <section id="section_3">
+          <div class="image_bloc">
+              <div class="image_projet"><a href="https://bultel.github.io/Juste_prix/"><img class="img_projet" src="img/juste_prix.png" alt=""></a></div>
+              <div class="image_projet"><img class="img_projet" src="img/meteoa_app.png" alt=""></div>
+              <div class="image_projet"><img class="img_projet" src="img/Capture d’écran 2020-12-16 152322.png" alt=""></div>
+          </div>
+          <div class="image_bloc">
+            <div class="image_projet"><img class="img_projet" src="img/btc_price.png" alt=""></div>
+            <div class="image_projet"><img class="img_projet" src="img/snake.png" alt=""></div>
+            <div class="image_projet"><img class="img_projet" src="img/generateur_citations.png" alt=""></div>
         </div>
-    </section>
-
-    <div class="pimg4">
-    </div>
-    <section id="section4">
-        <h2>Contact</h2>
-        <div class="borderbox">
-        <h3>Si vous voulez plus de renseignement, vous pouvez me contacter</h3>
-        <div class="contact_text">
-        <p><span style="font-weight: bold">Mail :</span> bultelalexis@gmail.com</p>
-        <p><span style="font-weight: bold">Téléphone :</span> 06 67 46 42 54</p>
-    </div>
-    </div>
     </section>
 </body>
 
+ <!-- CONTACT -->
 <footer>
-    <span>2019 &copy; BULTEL Alexis</span>
+    <div id="section_4">
+        <div class="contact">
+            <div class="icone_contact"><img src="img/facebook.svg" alt=""></div>
+            <div class="icone_contact"><img src="img/github.svg" alt=""></div>
+            <div class="icone_contact"><img src="img/linkedin.svg" alt=""></div>
+            <div class="icone_contact"><img src="img/gmail.svg" alt=""></div>
+        </div>
+        <div class="copyright"><span>2020 &copy; BULTEL Alexis</span></div>
+    </div>
 </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
