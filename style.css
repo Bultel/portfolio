@@ -80,6 +80,10 @@ background-color: #8550FC;
 
 /* A PROPOS */
 
+#section_1 h2{
+    font-size: 2em;
+    text-align: center;
+}
 .timeline{
     position: relative;
     margin: 50px auto;
@@ -175,6 +179,36 @@ background-color: #8550FC;
     margin: 0;
     padding: 0;
     font-size: 14px;
+}
+
+/* FORMATIONS */
+#section_2{
+    width: 90%;
+    background: white;
+    margin: 2em auto;
+    border-radius: 1em;
+}
+#section_2 h2{
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+}
+.text_formation{
+    margin: 0 20vw;
+    text-align: justify;
+}
+.text_formation p{
+    padding: 2em;
+}
+.img_formation ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+.img_formation ul li{
+    width: 15%;
 }
 
   /* PROJETS */
@@ -314,7 +348,7 @@ background-color: #8550FC;
         left: 50px;
         right: inherit;
     }
-    /* FORMATION */
+    /* PORTFOLIO */
     .image_bloc{
         text-align: center;
         width: 100%;
