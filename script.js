@@ -1,16 +1,43 @@
-$(window).on('scroll', function(){
-    if ($(window).scrollTop()) {
-        $('nav').addClass ('black');
-    }
-    else{
-        $('nav').removeClass ('black');
-    }
-});
-$(document).ready(function(){
-    $('.menu h4').click(function(){
-        $('nav ul').toggleClass('active')
-    })
-});
+// $(window).on('scroll', function(){
+//     if ($(window).scrollTop()) {
+//         $('nav').addClass ('black');
+//     }
+//     else{
+//         $('nav').removeClass ('black');
+//     }
+// });
+// $(document).ready(function(){
+//     $('.menu h4').click(function(){
+//         $('nav ul').toggleClass('active')
+//     })
+// });
+
+
+window.onload = function () {
+    let navbar = document.querySelectorAll("nav");
+    let black = document.querySelector(".black");
+    var scroll = 0;
+
+    window.addEventListener('scroll', function() {
+        scroll = window.scrollY;
+        navbar.toggle (black);
+    });
+      
+
+};
+// window.onload = function(){
+// let navbar = document.querySelector("nav");
+// let black = document.querySelector(".black");
+
+// document.querySelector(window).on('scroll', function(){
+//     if (window.scrollTop()) {
+//         document.querySelector('navbar').addClass ('black');
+//     }
+//     else{
+//         document.querySelector('navbar').removeClass ('black');
+//     }
+// });
+// };
 
 /*** Smooth scrolling to page anchor on click**/
 $(function() {
