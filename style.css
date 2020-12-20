@@ -222,6 +222,7 @@ background-color: #8550FC;
       margin: auto;
       margin-bottom: 2vw;
       border-radius: 1em;
+      padding-bottom: 2vw;
   }
 .image_bloc{
     display: flex;
@@ -384,6 +385,16 @@ background-color: #8550FC;
         width: 50%;
     }
 
+}
+
+
+.hidden{
+    opacity: 0;
+}
+.appear{
+    opacity: 1;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
 }
 
 
