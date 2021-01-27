@@ -6,6 +6,7 @@
 //         $('nav').removeClass ('black');
 //     }
 // });
+
 // $(document).ready(function(){
 //     $('.menu h4').click(function(){
 //         $('nav ul').toggleClass('active')
@@ -31,11 +32,59 @@ scrollAppear = () => {
 
 window.addEventListener("scroll", scrollAppear);
 
-// navbar
-var navAppear = document.querySelector ("nav");
-var navBlack = document.querySelector (".black");
+// sticky navbar
+
+// let navBlack = document.querySelector ("nav");
+// window.addEventListener("scroll", function(){
+// navBlack.classList.toggle("black", window.scrollY > 0);
+// });
+
+//  Click navbar
+// let clickMenu = document.querySelector (".menu h4");
+// let navigation = document.querySelector ("nav ul");
+// window.addEventListener("click", function () {
+// clickMenu.classList.toggle (navigation);
+// });
+
+// const navbarToggler = document.querySelector(".menu h4");
+// const navbarMenu = document.querySelector("nav ul");
+// const navbarLinks = document.querySelectorAll("nav ul li a");
+
+// navbarToggler.addEventListener("click", navbarTogglerClick);
+
+// function navbarTogglerClick() {
+//   navbarToggler.classList.toggle(".responsive_nav");
+//   navbarMenu.classList.toggle("active");
+// }
+
+// navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+// function navbarLinkClick() {
+//   if(navbarMenu.classList.contains("active")) {
+//     navbarToggler.click();
+//   }
+// }
 
 
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector(".navbar ul");
+const navbarLinks = document.querySelectorAll(".navbar a");
+
+navbarToggler.addEventListener("click", navbarTogglerClick);
+
+function navbarTogglerClick() {
+  navbarToggler.classList.toggle("open-navbar-toggler");
+  navbarMenu.classList.toggle("open");
+}
+
+navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+function navbarLinkClick() {
+  if(navbarMenu.classList.contains("open")) {
+    navbarToggler.click();
+  }
+}
+  
 };
 
 /*** Smooth scrolling to page anchor on click**/

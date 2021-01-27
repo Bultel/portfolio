@@ -2,6 +2,12 @@
 <html lang="fr-FR">
 
 <head>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
@@ -14,12 +20,9 @@
 <body>
     <section id="section_header">
         <!-- NAVBAR -->
-        <div class="responsive_nav">
-            <div class="menu">
-                <h4>Menu</h4>
-            </div>
-        </div>
-        <nav> 
+        
+        <nav class="navbar">
+            <a href="#" class="navbar-brand"><span>W</span>eb<span>D</span>ev</a>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#section_1">A propos</a></li>
@@ -27,7 +30,10 @@
                 <li><a href="#section_3">Portfolio</a></li>
                 <li><a href="#section_4">Contact</a></li>
             </ul>
-        </nav>
+            <button class="navbar-toggler">
+              <span></span>
+            </button>
+          </nav>
 
         <div class="title hidden">
             <h2>BULTEL Alexis</h2>
@@ -74,45 +80,81 @@
             </ul>
         </div>
     </section>
+    
     <!-- FORMATIONS -->
 <section id="section_2">
     <h2 class="hidden">Formations</h2>
+    <div class="bloc_formation">
     <div class="img_formation hidden">
-        <ul>
-            <li>
-                <img src="img/html5.svg" alt="">
-            </li>
-            <li>
-                <img src="img/css3.svg" alt="">
-            </li>
-            <li>
-                <img src="img/js.svg" alt="">
-            </li>
-            <li>
-                <img src="img/wordpress.svg" alt="">
-            </li>
-            <li>
-                <img src="img/bootstrap.svg" alt="">
-            </li>
-        </ul>
-        
+       
+    <img src="img/html5.svg" alt="">
+           
     </div>
     <div class="text_formation hidden">
         <p>Aprés l'obtention de mon BAC PRO en production horticole, je me suis engagé dans l'armée de l'air. Cette expérience m'a appris la rigueur, le travail en équipe ainsi que la gestion de celle-ci. Par la suite, j'ai ressenti le desir de me reconvertir, je me suis donc auto-formé pour pouvoir en faire mon futur metier.</p>
+        <li>
+            <ul>html</ul>
+            <ul>css</ul>
+            <ul>javascript</ul>
+            <ul>wordpress</ul>
+        </li>
     </div>
+</div>
 </section>
     <!-- PORTFOLIO -->
+    <h2>Portfolio</h2>
     <section id="section_3">
           <div class="image_bloc">
-              <div class="image_projet hidden"><a href="https://bultel.github.io/Juste_prix/"><img class="img_projet" src="img/juste_prix.png" alt=""></a></div>
-              <div class="image_projet hidden"><img class="img_projet" src="img/meteoa_app.png" alt=""></div>
-              <div class="image_projet hidden"><img class="img_projet" src="img/Capture d’écran 2020-12-16 152322.png" alt=""></div>
+
+              <div class="one hidden">
+                  <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/a">
+                  <div class="overlay">
+                      <div class="img_title">Lorem, ipsum dolor.</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="two hidden">
+                  <a href="">
+                <div class="overlay">
+                    <div class="img_title">Lorem, ipsum dolor.</div>
+                </div>
+                </a>
+              </div>
+
+              <div class="three hidden">
+                  <a href="">
+                <div class="overlay">
+                    <div class="img_title">Lorem, ipsum dolor.</div>
+                </div>
+              </a>
+              </div>
+
+              <div class="four hidden">
+                  <a href="">
+                <div class="overlay">
+                    <div class="img_title">Lorem, ipsum dolor.</div>
+                </div>
+                </a>
+              </div>
+
+              <div class="five hidden">
+                  <a href="">
+                <div class="overlay">
+                    <div class="img_title">Lorem, ipsum dolor.</div>
+                </div>
+              </a>
+              </div>
+
+              <div class="six hidden">
+                  <a href="">
+                <div class="overlay">
+                    <div class="img_title">Lorem, ipsum dolor.</div>
+                </div>
+              </a>
+              </div>
+
           </div>
-          <div class="image_bloc">
-            <div class="image_projet hidden"><img class="img_projet" src="img/btc_price.png" alt=""></div>
-            <div class="image_projet hidden"><img class="img_projet" src="img/snake.png" alt=""></div>
-            <div class="image_projet hidden"><img class="img_projet" src="img/generateur_citations.png" alt=""></div>
-        </div>
     </section>
 </body>
 
