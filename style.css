@@ -7,6 +7,26 @@ body, html{
     line-height: 2em;
     background-color: #212529;
   }
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    width: 13px;
+    color: #212529;
+    border-left: 0 solid white;
+    border-radius: 0 solid white;
+}
+::-webkit-scrollbar-thumb{
+    background: #3bb78f;
+    width: 0;
+    height: 35%;
+    transform: 0.5 ease;
+    cursor: pointer;
+}
+
+/* header */
+
 #section_header{
     /* background-image: url(img/headerv2.svg);
     background-size: cover; */
@@ -18,7 +38,7 @@ body, html{
     position: absolute;
 }
 .title h2{
-    color: #24cdd5;
+    color: #3bb78f;
     margin-top: 5vw;
     font-size: 3em;
 }
@@ -52,7 +72,7 @@ body, html{
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 2px;
-    color: #24cdd5;
+    color:#3bb78f;
   }
   .navbar a.navbar-brand span {
     font-size: 28px;
@@ -76,7 +96,7 @@ body, html{
     padding: 0 30px;
   }
   .navbar ul li a:hover {
-    color: #24cdd5;
+    color: #3bb78f;
   }
   .navbar .navbar-toggler {
     display: none;
@@ -132,9 +152,9 @@ body, html{
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #24cdd5;
+    background:#3bb78f;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #24cdd5 0.2;
+    box-shadow: 0 0 0 3px #3bb78f 0.2;
     top: 24px;
     right: -6px;
 }
@@ -143,9 +163,9 @@ body, html{
     position: absolute;
     width: 10px;
     height: 10px;
-    background: #24cdd5;
+    background:#3bb78f;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #24cdd5 0.2;
+    box-shadow: 0 0 0 3px #3bb78f 0.2;
     top: 24px;
     left: -4px;
 }
@@ -153,7 +173,7 @@ body, html{
     margin: 0;
     padding: 0;
     font-weight: 600;
-    color: #24cdd5;
+    color: #3bb78f;
 }
 .timeline ul li p{
     margin: 10px 0 0;
@@ -165,10 +185,10 @@ body, html{
     right: -165px;
     margin: 0;
     padding: 8px 16px;
-    /* background: #24cdd5; */
     color: white;
     border-radius: 18px;
-    border: solid #24cdd5;
+    border-width: 1px !important;
+    border: solid #3bb78f;
 }
 .timeline ul li:nth-child(even) .time{
     position: absolute;
@@ -176,8 +196,9 @@ body, html{
     left: -165px;
     margin: 0;
     padding: 8px 16px;
-    border: solid #24cdd5;
+    border: solid #3bb78f;
     color: white;
+    border-width: 1px;
     border-radius: 18px;
 }
 .timeline ul li .time h4{
@@ -187,12 +208,12 @@ body, html{
 }
 
 /* FORMATIONS */
-#section_2{
-    /* width: 90%;
+/* #section_2{
+    width: 90%;
     background: white;
     margin: 2em auto;
-    border-radius: 1em; */
-}
+    border-radius: 1em;
+} */
 #section_2 h2{
     font-size: 2em;
     text-align: center;
@@ -218,8 +239,9 @@ body, html{
     justify-content: center;
 }
 .text_formation li ul{
-    border: solid #24cdd5;
+    border: solid #3bb78f;
     border-radius: 10px;
+    border-width: 1px;
     padding: 0 1vw;
     margin: 0 1vw;
 }
@@ -310,7 +332,7 @@ h2{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: #0bceaf;
+    background: #3bb78f;
 }
 .image_bloc div:hover .overlay{
     opacity: 0.5;
@@ -318,21 +340,41 @@ h2{
  
 /* CONTACT */
 
-#section_4{
+/* #section_4{
     width: 90%;
-    background-color: white;
     margin: auto;
     padding: auto;
     margin-bottom: 2vw;
     border-radius: 1em;
-}
+} */
 .contact{
     display: flex;
-    width: 30%;
+    width: 100%;
     margin: auto;
+    justify-content: center;
+    margin-bottom: 2vw;
 }
 .icone_contact{
-    width: 40%;
+    width: 25%;
+    height: 20vw;
+    text-align: center;
+    background-color: black;
+    margin: 2vw;
+}
+.icone_contact .fa{
+    border: solid #3bb78f;
+    border-width: 1px;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+.icone_contact h6{
+    font-size: 1.5vw;
+    margin: 1.5vw;
+}
+.icone_contact p {
+    font-size: 1vw;
 }
 .copyright{
     text-align: center;
@@ -360,9 +402,6 @@ h2{
 
 @media (max-width: 768px){
 
-    #section_header{
-    background-image: url(img/header_mobile.svg);
-    }
     .title{
         margin-top: 30vw;
         margin-left: 26vw;
@@ -464,6 +503,16 @@ h2{
         left: 50px;
         right: inherit;
     }
+    /* Formation */
+    .bloc_formation{
+        display: block;
+    }
+    .img_formation{
+        width: 100%;
+    }
+    .text_formation{
+        width: 90%;
+    }
     /* PORTFOLIO */
     .image_bloc{
         text-align: center;
@@ -480,8 +529,15 @@ h2{
     .img_formation ul li{
         width: 20%;
     }
+    /* CONTACT */
     .contact{
         width: 50%;
+        display: block;
+        margin-bottom: 4vw;
+    }
+    .icone_contact{
+        width: auto;
+        height: auto;
     }
 
 }
