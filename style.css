@@ -7,6 +7,13 @@ body, html{
     line-height: 2em;
     background-color: #212529;
   }
+  h2{
+      display: flex;
+      margin-left: 6vw;
+      font-size: 3em;
+      padding-top: 2vw;
+      letter-spacing: 3px;
+  }
 /* Scrollbar */
 ::-webkit-scrollbar{
     width: 13px;
@@ -28,28 +35,26 @@ body, html{
 /* header */
 
 #section_header{
-    /* background-image: url(img/headerv2.svg);
-    background-size: cover; */
     height: 100%;
 }
 .title{
     margin-top: 10vw;
-    margin-left: 3vw;
+    margin-left: 6vw;
     position: absolute;
 }
 .title h2{
     color: #3bb78f;
     margin-top: 5vw;
-    font-size: 3em;
+    font-size: 6vw;
+    margin-left: auto;
 }
 .title h1{
-    font-size: 2em;
+    font-size: 4vw;
 }
 
 .navbar {
     background-color:#212529;
     color: white;
-    /* border-bottom: 1px solid rgba(255,255,255,0.2); */
     width: 100%;
     height: 80px;
     line-height: 80px;
@@ -92,7 +97,7 @@ body, html{
   .navbar ul li a {
     display: block;
     text-align: center;
-    min-width: 120px;
+    min-width: 4vw;
     padding: 0 30px;
   }
   .navbar ul li a:hover {
@@ -104,10 +109,10 @@ body, html{
 
 /* A PROPOS */
 
-#section_1 h2{
+/* #section_1 h2{
     font-size: 2em;
     text-align: center;
-}
+} */
 .timeline{
     position: relative;
     margin: 50px auto;
@@ -208,18 +213,6 @@ body, html{
 }
 
 /* FORMATIONS */
-/* #section_2{
-    width: 90%;
-    background: white;
-    margin: 2em auto;
-    border-radius: 1em;
-} */
-#section_2 h2{
-    font-size: 2em;
-    text-align: center;
-    margin: auto;
-    padding-top: 1em;
-}
 .bloc_formation{
     display: flex;
     padding-top: 3vw;
@@ -250,13 +243,6 @@ body, html{
 }
 
   /* PROJETS */
-h2{
-    font-size: 2em;
-    text-align: center;
-    margin: auto;
-    padding-top: 1em;
-    padding-bottom: 2vw;
-}
   #section_3{
       display: flex;
       justify-content: center;
@@ -339,14 +325,6 @@ h2{
 }
  
 /* CONTACT */
-
-/* #section_4{
-    width: 90%;
-    margin: auto;
-    padding: auto;
-    margin-bottom: 2vw;
-    border-radius: 1em;
-} */
 .contact{
     display: flex;
     width: 100%;
@@ -360,6 +338,7 @@ h2{
     text-align: center;
     background-color: black;
     margin: 2vw;
+    border-radius: 30px;
 }
 .icone_contact .fa{
     border: solid #3bb78f;
@@ -376,25 +355,24 @@ h2{
 .icone_contact p {
     font-size: 1vw;
 }
+.icone_contact p a {
+    text-decoration: none;
+    color: white;
+}
 .copyright{
     text-align: center;
 }
 
 @media (max-width: 1000px){
+    /* header */
     .title{
         margin-top: 15vw;
         margin-left: 4vw;
     }
-
-    .navbar ul {
-        padding: 0 10px;
-    }
-
     .navbar ul li a {
-        min-width: 100px;
         padding: 0 20px;
     }
-
+/* timeline */
     .timeline{
         width: 100%;
     }
@@ -402,9 +380,10 @@ h2{
 
 @media (max-width: 768px){
 
+    /* header */
     .title{
         margin-top: 30vw;
-        margin-left: 26vw;
+        margin-left: 20vw;
     }
 
     .navbar {
@@ -425,7 +404,6 @@ h2{
       }
       .navbar ul li {
         width: 100%;
-        /* border-bottom: 1px solid rgba(255,255,255,0.3); */
       }
       .navbar ul li a {
         padding: 0;
@@ -462,19 +440,16 @@ h2{
       }
       
       .navbar .navbar-toggler.open-navbar-toggler span {
-        /* transform: rotate(90deg); */
         background-color: transparent;
-        /* transform: scale(0.85) rotate(270deg); */
       }
       .navbar .navbar-toggler.open-navbar-toggler span::before {
         transform: translateY(0px) rotate(45deg);
-        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
       }
       .navbar .navbar-toggler.open-navbar-toggler span::after {
         transform: translateY(-3px) rotate(-45deg);
-        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
       }
     
+      /* timeline */
     .timeline{
         width: 100%;
     }
@@ -515,8 +490,8 @@ h2{
     }
     /* PORTFOLIO */
     .image_bloc{
-        text-align: center;
-        width: 100%;
+        display: flex;
+        width: 50%;
         flex-direction: column;
     }
     .image_projet{
