@@ -1,18 +1,6 @@
-// $(window).on('scroll', function(){
-//     if ($(window).scrollTop()) {
-//         $('nav').addClass ('black');
-//     }
-//     else{
-//         $('nav').removeClass ('black');
-//     }
-// });
-
-// $(document).ready(function(){
-//     $('.menu h4').click(function(){
-//         $('nav ul').toggleClass('active')
-//     })
-// });
 window.onload = function (){
+
+// Scroll appear
 
 const textAppear = document.querySelectorAll(".hidden");
 const triggerMultiplier = 1.2;
@@ -32,39 +20,7 @@ scrollAppear = () => {
 
 window.addEventListener("scroll", scrollAppear);
 
-// sticky navbar
-
-// let navBlack = document.querySelector ("nav");
-// window.addEventListener("scroll", function(){
-// navBlack.classList.toggle("black", window.scrollY > 0);
-// });
-
-//  Click navbar
-// let clickMenu = document.querySelector (".menu h4");
-// let navigation = document.querySelector ("nav ul");
-// window.addEventListener("click", function () {
-// clickMenu.classList.toggle (navigation);
-// });
-
-// const navbarToggler = document.querySelector(".menu h4");
-// const navbarMenu = document.querySelector("nav ul");
-// const navbarLinks = document.querySelectorAll("nav ul li a");
-
-// navbarToggler.addEventListener("click", navbarTogglerClick);
-
-// function navbarTogglerClick() {
-//   navbarToggler.classList.toggle(".responsive_nav");
-//   navbarMenu.classList.toggle("active");
-// }
-
-// navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
-
-// function navbarLinkClick() {
-//   if(navbarMenu.classList.contains("active")) {
-//     navbarToggler.click();
-//   }
-// }
-
+// navbar
 
 const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar ul");
@@ -84,60 +40,29 @@ function navbarLinkClick() {
     navbarToggler.click();
   }
 }
+
+// Typin effect
+
+const texts = ["websites", "illustrations", "pancakes"];
+let count = 0; //Words
+let index = 0; //individuals letters
+let currentText = '';
+let letter = '';
+
+(function type() {
+  if (count === texts.length){
+    count = 0;
+  };
+  currentText = texts [count];
+  letter = currentText.slice (0, ++index);
+
+  document.querySelector (".typing").textContent = letter;
+  if (letter.length === currentText.length) {
+    count++;
+    index = 0;
+  }
+  setTimeout (type,400);
+
+}());
   
 };
-
-/*** Smooth scrolling to page anchor on click**/
-// $(function() {
-//     $("a[href*='#section1']:not([href='#'])").click(function() {
-//         if (
-//             location.hostname == this.hostname
-//             && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-//         ) {
-//             var anchor = $(this.hash);
-//             anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-//             if ( anchor.length ) {
-//                 $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
-//             }
-//         }
-//     });
-
-//     $("a[href*='#section2']:not([href='#'])").click(function() {
-//         if (
-//             location.hostname == this.hostname
-//             && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-//         ) {
-//             var anchor = $(this.hash);
-//             anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-//             if ( anchor.length ) {
-//                 $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
-//             }
-//         }
-//     });
-
-//     $("a[href*='#section3']:not([href='#'])").click(function() {
-//         if (
-//             location.hostname == this.hostname
-//             && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-//         ) {
-//             var anchor = $(this.hash);
-//             anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-//             if ( anchor.length ) {
-//                 $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
-//             }
-//         }
-//     });
-
-//     $("a[href*='#section4']:not([href='#'])").click(function() {
-//         if (
-//             location.hostname == this.hostname
-//             && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-//         ) {
-//             var anchor = $(this.hash);
-//             anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-//             if ( anchor.length ) {
-//                 $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
-//             }
-//         }
-//     });
-// });

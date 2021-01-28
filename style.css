@@ -10,7 +10,7 @@ body, html{
   h2{
       display: flex;
       margin-left: 6vw;
-      font-size: 3em;
+      font-size: 4vw;
       padding-top: 2vw;
       letter-spacing: 3px;
   }
@@ -37,10 +37,13 @@ body, html{
 #section_header{
     height: 100%;
 }
+.bloc_header{
+    display: flex;
+}
 .title{
     margin-top: 10vw;
     margin-left: 6vw;
-    position: absolute;
+    width: 50%;
 }
 .title h2{
     color: #3bb78f;
@@ -51,7 +54,37 @@ body, html{
 .title h1{
     font-size: 4vw;
 }
-
+.intro{
+    display: flex;
+}
+.typing{
+    position: relative;
+    margin-left: 10px;
+    color: #3bb78f;
+}
+.img_header{
+    width: 50%;
+    margin-top: 8vw;
+}
+.img_header img{
+    width: 80%;
+    margin-top: 2vw;
+}
+.typing::after{
+    content: '';
+    width: 1px;
+    height: 5%;
+    border-right: 6px solid white;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .navbar {
     background-color:#212529;
     color: white;
@@ -108,11 +141,6 @@ body, html{
   }
 
 /* A PROPOS */
-
-/* #section_1 h2{
-    font-size: 2em;
-    text-align: center;
-} */
 .timeline{
     position: relative;
     margin: 50px auto;
@@ -218,18 +246,36 @@ body, html{
     padding-top: 3vw;
     padding-bottom: 3vw;
 }
-
+.description_formation{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    padding-top: 3vw;
+}
+.description_formation p{
+    text-align: center;
+}
 .text_formation{
     text-align: justify;
     width: 30%;
 }
-.text_formation p{
+/* .text_formation p{
     padding: 2em;
+} */
+.text_formation h6{
+    font-size: 2vw;
+    margin: 3vw 0;
+    color: #3bb78f;
+}
+.text_formation span{
+    color: #3bb78f;
 }
 .text_formation li{
     display: flex;
     list-style: none;
     justify-content: center;
+    padding-top: 2vw;
 }
 .text_formation li ul{
     border: solid #3bb78f;
@@ -239,7 +285,13 @@ body, html{
     margin: 0 1vw;
 }
 .img_formation{
-    width: 50%;
+    width: 60%;
+    text-align: center;
+}
+.img_formation img{
+    width: 60%;
+    text-align: center;
+    padding-top: 3vw;
 }
 
   /* PROJETS */
@@ -361,6 +413,7 @@ body, html{
 }
 .copyright{
     text-align: center;
+    padding-top: 2vw;
 }
 
 @media (max-width: 1000px){
@@ -381,11 +434,35 @@ body, html{
 @media (max-width: 768px){
 
     /* header */
-    .title{
-        margin-top: 30vw;
-        margin-left: 20vw;
+    h2{
+        font-size: 7vw;
     }
-
+    .bloc_header{
+        display: block;
+        margin-top: 40vw;
+    }
+    .title{
+       margin: 0 auto;
+       width: 80%;
+    }
+    .title h2{
+        justify-content: center;
+        font-size: 10vw;
+    }
+    .title h1{
+        text-align: center;
+        font-size: 8vw;
+    }
+    .intro{
+        justify-content: center;
+    }
+    .img_header{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .img_header img{
+        margin: 4vw;
+    }
     .navbar {
         padding: 0;
       }
@@ -479,6 +556,15 @@ body, html{
         right: inherit;
     }
     /* Formation */
+    .description_formation{
+        width: 80%;
+    }
+    .description_formation p{
+        font-size: 2vw;
+    }
+    .text_formation h6{
+        font-size: 4vw;
+    }
     .bloc_formation{
         display: block;
     }
@@ -488,6 +574,7 @@ body, html{
     .text_formation{
         width: 90%;
     }
+
     /* PORTFOLIO */
     .image_bloc{
         display: flex;
@@ -514,10 +601,19 @@ body, html{
         width: auto;
         height: auto;
     }
+    .icone_contact .fa{
+        font-size: 5vw;
+    }
+    .contact h6{
+        font-size: 5vw;
+    }
+    .contact p{
+        font-size: 3vw;
+    }
 
 }
 
-
+/* scroll appear */
 .hidden{
     opacity: 0;
 }
