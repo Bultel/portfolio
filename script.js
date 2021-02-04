@@ -43,7 +43,7 @@ window.onload = function () {
 
   // Typin effect
 
-  const texts = ["websites", "illustrations", "pancakes"];
+  const texts = ["apprendre", "comprendre", "pratiquer"];
   let count = 0; //Words
   let index = 0; //individuals letters
   let currentText = '';
