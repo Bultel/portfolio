@@ -657,6 +657,7 @@ h2 {
 
     .description_formation p {
         font-size: 1em;
+        text-align: justify;
     }
 
     .text_formation h6 {
@@ -709,9 +710,16 @@ h2 {
         width: auto;
         height: auto;
     }
+    .icone_contact h6{
+        margin: 0;
+    }
+    .icone_contact p {
+        margin: 0;
+    }
 
     .icone_contact .fa {
         font-size: 5vw;
+        margin-top: 4vw;
     }
 
     .contact h6 {
